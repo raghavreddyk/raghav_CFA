@@ -31,4 +31,5 @@ pip install -r backend/requirements.txt
 
 # 5. Launch FastAPI server
 echo "--> Starting FastAPI on http://localhost:8000..."
-python3 -m uvicorn backend.app.main:app --reload --port 8000
+python3 -m uvicorn backend.app.main:app --reload --host 0.0.0.0 --port 8000
+
